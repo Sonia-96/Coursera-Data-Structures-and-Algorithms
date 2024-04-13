@@ -124,7 +124,6 @@ def merge(left, right):
         right = right.left
     right = splay(right)
     right.left = left
-    left.parent = right # starter file里忘掉了
     update(right)  # important!!
     return right
 
